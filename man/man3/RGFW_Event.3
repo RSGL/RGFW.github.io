@@ -1,0 +1,69 @@
+.TH "RGFW_Event" 3 "Thu Mar 23 2023" "RGFW" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RGFW_Event
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBtype\fP"
+.br
+.ti -1c
+.RI "int \fBbutton\fP"
+.br
+.ti -1c
+.RI "int \fBx\fP"
+.br
+.ti -1c
+.RI "int \fBy\fP"
+.br
+.ti -1c
+.RI "int \fBledState\fP"
+.br
+.ti -1c
+.RI "int \fBkeyCode\fP"
+.br
+.ti -1c
+.RI "char * \fBkeyName\fP"
+.br
+.ti -1c
+.RI "int \fBdropX\fP"
+.br
+.ti -1c
+.RI "int \fBdropY\fP"
+.br
+.ti -1c
+.RI "int \fBdroppedFilesCount\fP"
+.br
+.ti -1c
+.RI "char ** \fBdroppedFiles\fP"
+.br
+.in -1c
+.SH "Member Data Documentation"
+.PP 
+.SS "int RGFW_Event::button"
+which mouse button has been clicked (0) left (1) middle (2) right 
+.SS "char** RGFW_Event::droppedFiles"
+dropped files 
+.SS "int RGFW_Event::droppedFilesCount"
+house many files were dropped 
+.SS "int RGFW_Event::dropY"
+where the drop file was dropped 
+.SS "int RGFW_Event::keyCode"
+keycode of event 
+.SS "char* RGFW_Event::keyName"
+key name of event 
+.SS "int RGFW_Event::ledState"
+0 : numlock, 1 : caps lock, 3 : small lock 
+.SS "int RGFW_Event::type"
+which event has been sent? 
+.SS "int RGFW_Event::y"
+mouse x, y of event 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RGFW from the source code\&.

@@ -1,0 +1,79 @@
+.TH "RGFW_window" 3 "Thu Mar 23 2023" "RGFW" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RGFW_window
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "void * \fBdisplay\fP"
+.br
+.ti -1c
+.RI "void * \fBwindow\fP"
+.br
+.ti -1c
+.RI "void * \fBglWin\fP"
+.br
+.ti -1c
+.RI "char * \fBname\fP"
+.br
+.ti -1c
+.RI "int \fBx\fP"
+.br
+.ti -1c
+.RI "int \fBy\fP"
+.br
+.ti -1c
+.RI "int \fBw\fP"
+.br
+.ti -1c
+.RI "int \fBh\fP"
+.br
+.ti -1c
+.RI "int \fBsrcX\fP"
+.br
+.ti -1c
+.RI "int \fBsrcY\fP"
+.br
+.ti -1c
+.RI "int \fBsrcW\fP"
+.br
+.ti -1c
+.RI "int \fBsrcH\fP"
+.br
+.ti -1c
+.RI "char * \fBsrcName\fP"
+.br
+.ti -1c
+.RI "unsigned char \fBdnd\fP"
+.br
+.ti -1c
+.RI "\fBRGFW_Event\fP \fBevent\fP"
+.br
+.in -1c
+.SH "Member Data Documentation"
+.PP 
+.SS "void* RGFW_window::display"
+source display 
+.SS "unsigned char RGFW_window::dnd"
+if dnd is enabled or on (based on window creating args) 
+.SS "\fBRGFW_Event\fP RGFW_window::event"
+current event 
+.SS "void* RGFW_window::glWin"
+source opengl context 
+.SS "int RGFW_window::h"
+window size, x, y 
+.SS "char* RGFW_window::name"
+window's name 
+.SS "char* RGFW_window::srcName"
+source name, for chaning the name (do not change these values directly) 
+.SS "void* RGFW_window::window"
+source window 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RGFW from the source code\&.
